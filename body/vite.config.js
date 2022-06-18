@@ -5,15 +5,15 @@ import federation from "@originjs/vite-plugin-federation";
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    port: 3001,
+    port: 4174,
   },
   plugins: [
     react(),
     federation({
-      name: "remote1",
-      filename: "remoteEntry.js",
+      name: "body",
+      filename: "bodyEntry.js",
       exposes: {
-        "./Button": "./src/components/Button/index.tsx",
+        "./Body": "./src/components/Body/index.tsx",
       },
     }),
   ],

@@ -10,7 +10,10 @@ export default defineConfig({
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        remote1: "http://localhost:3001/assets/remoteEntry.js",
+        header: "http://localhost:4173/assets/headerEntry.js",
+        body: "http://localhost:4174/assets/bodyEntry.js",
+        footer: "http://localhost:4175/assets/footerEntry.js",
+        cards: "http://localhost:4176/assets/cardsEntry.js",
       },
     }),
   ],

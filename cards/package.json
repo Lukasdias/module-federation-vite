@@ -6,9 +6,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "serve": "vite preview --port 3001 --strictPort"
+    "serve": "yarn build && vite preview --port 3001 --strictPort",
+    "watch": "vite build --watch --config vite.config.js"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

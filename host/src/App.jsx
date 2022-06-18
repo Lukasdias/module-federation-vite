@@ -1,13 +1,19 @@
 import React from "react";
 
-import Remote1Button from "remote1/Button";
+import Header from "header/Header";
+import Body from "body/Body";
+import Footer from "footer/Footer";
+import Cards from "cards/Cards";
 
 function App() {
   return (
-    <>
-      <h1>HOST</h1>
-      <Remote1Button />
-    </>
+    <div className="w-screen h-screen flex flex-col p-0 m-0 bg-indigo-600 overflow-hidden">
+      <Header />
+      <Body>
+        <Cards />
+      </Body>
+      <Footer />
+    </div>
   );
 }
 
