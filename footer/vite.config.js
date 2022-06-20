@@ -12,21 +12,11 @@ export default defineConfig({
     federation({
       name: "footer",
       filename: "footerEntry.js",
-      exposes: {
-        "./Footer": "./src/components/Footer/index.tsx",
+      remotes: {
+        cards: "http://localhost:4176/assets/cardsEntry.js",
       },
-      shared: {
-        ...deps,
-        react: {
-          eager: true,
-          singleton: true,
-          requiredVersion: deps["react"],
-        },
-        "react-dom": {
-          eager: true,
-          singleton: true,
-          requiredVersion: deps["react-dom"],
-        },
+      exposes: {
+        "./Footer": "./src/components/Footer/index.jsx",
       },
       resolve: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],

@@ -1,11 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import RemoteAssets from "vite-plugin-remote-assets";
 import federation from "@originjs/vite-plugin-federation";
 const deps = require("./package.json").dependencies;
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    RemoteAssets(),
     react(),
     federation({
       name: "host",

@@ -12,8 +12,11 @@ export default defineConfig({
     federation({
       name: "header",
       filename: "headerEntry.js",
+      remotes: {
+        cards: "http://localhost:4176/assets/cardsEntry.js",
+      },
       exposes: {
-        "./Header": "./src/components/Header/index.tsx",
+        "./Header": "./src/components/Header/index.jsx",
       },
     }),
   ],

@@ -19,7 +19,6 @@ const Cards: React.FC = () => {
   const { theme, toggleTheme } = useStore();
 
   React.useEffect(() => {
-    console.log(darkTheme);
     document.documentElement.classList.remove("theme-default", darkTheme);
     document.documentElement.classList.add(theme);
 
