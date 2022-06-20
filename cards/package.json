@@ -5,17 +5,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "serve": "yarn build && vite preview --port 3001 --strictPort",
-    "watch": "vite build --watch --config vite.config.js"
+    "preview": "vite preview --port 4176 --strictPort",
+    "serve": "vite build && yarn preview"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.2.1",
-    "@emotion/react": "^11",
-    "@emotion/styled": "^11",
-    "framer-motion": "^6",
+    "@radix-ui/colors": "^0.1.8",
+    "@stitches/react": "^1.2.8",
+    "concurrently": "^7.2.2",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "zustand": "^4.0.0-rc.1"
   },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "^1.1.6",
